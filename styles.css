@@ -22,8 +22,6 @@ span{
     color: #FE8F01;
 }
 
-  
-
 
 /*NAVBAR STYLES*/
 
@@ -80,6 +78,22 @@ span{
     color: #98A2B3;
 }
 /*HOW-IT-WORKS-STYLES*/
+.howitworks-para p{
+    color: #FCFCFC;
+}
+
+.accordion-body{
+    background-color: #101010;
+    color: #FCFCFC;
+}
+
+.accordion-button{
+    background-color: #FE8F01;
+    color: #FCFCFC;
+}
+
+.accordion-collapse{
+}
 /*FAQ STYLES*/
 /*DOWNLOAD-APP STYLES*/
 /*FOOTER STYLES*/
