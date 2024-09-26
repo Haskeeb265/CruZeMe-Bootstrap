@@ -82,21 +82,102 @@ span{
     color: #FCFCFC;
 }
 
+.accordion, .accordion-body, .accordion-button{
+    border:none
+}
+
 .accordion-body{
     background-color: #101010;
     color: #FCFCFC;
+    border: none;
 }
 
 .accordion-button{
-    background-color: #FE8F01;
+    background-color: #23190b;
     color: #FCFCFC;
+    border:none;
 }
+
+#accordionHowItWorks .accordion-button:not(.collapsed) {
+    background-color: #FE8F01; 
+    color: white;           
+    border: none;    
+}
+
+#accordionHowItWorks .accordion-button.collapsed {
+    background-color: #FE8F01;  
+    color: white;                    
+}
+
+#accordionHowItWorks .accordion-button:hover {
+    background-color: #FE8F01; 
+    color: white;
+}
+
+/* Accordion Item Border when opened */
+#accordionHowItWorks .accordion-collapse {
+    border: none  /* Custom border for the open state */
+}
+
 
 /*FAQ STYLES*/
 .faq-subheading{
     color: #FE8F01;
 }
+
+#accordionFAQ .accordion-button:not(.collapsed){
+    background-color: #FE8F01;  
+    color: white;
+    font-weight: 600;
+    border: none;  
+}
+
+#accordionFAQ .accordion-button.collapsed{
+    background-color: #101010;
+    border:solid 2px #FE8F01;
+}
+/* Apply styles only to the FAQ accordion */
+.faq-accordion .accordion-item .accordion-button {
+    border-radius: 0.5rem; /* Adjust for the round effect */
+}
+
+.faq-accordion .accordion-item {
+    border-radius: 0.5rem; /* Consistent rounded corners for the accordion item */
+}
+
+/* Custom width for FAQ accordion items */
+.faq-accordion .accordion-item {
+    margin: 0 auto;
+    width: 50%; /* Override any custom width for FAQ accordion */
+}
+
 /*DOWNLOAD-APP STYLES*/
+.dop-para{
+    color: #98A2B3;
+}
 /*FOOTER STYLES*/
+.footer-links{
+    border-top: 2px solid #323232;
+    border-bottom: 2px solid #323232;
+    height: auto;
+}
 
 
+
+@media (min-width: 576px) { /* Small devices (sm) and above */
+    .faq-accordion .accordion-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) { /* Medium devices (md) and above */
+    .faq-accordion .accordion-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) { /* Large devices (lg) and above */
+    .faq-accordion .accordion-item {
+        width: 50%;
+    }
+}
