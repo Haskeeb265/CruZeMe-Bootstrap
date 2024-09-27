@@ -1,183 +1,239 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-body{
-    background-color: #101010;
-    font-family: gilroy;
-    color: #FCFCFC;
+body {
+	background-color: #101010;
+	font-family: gilroy;
+	color: #FCFCFC;
 }
 
 @font-face {
-    font-family: gilroy;
+	font-family: gilroy;
     src: url(fonts/Gilroy-Regular.ttf);
 }
+
 @font-face {
-    font-family: heavitas;
+	font-family: heavitas;
     src: url(fonts/Heavitas.ttf);
 }
 
-span{
-    color: #FE8F01;
+span {
+	color: #FE8F01;
 }
 
 
 /*NAVBAR STYLES*/
 
-.nav-item a{
-    color: #FCFCFC;
+.nav-item a {
+	color: #FCFCFC;
 }
 
-.nav-item a:hover{
-    color: #FE8F01;
-
+.nav-item a:hover {
+	color: #FE8F01;
 }
 
-#contact-btn button{
-    background-color: #FE8F01;
-    border: none;
-    border-radius: 30px;
-    color: #FCFCFC;
-    font-weight: 600;
+#contact-btn button {
+	background-color: #FE8F01;
+	border: none;
+	border-radius: 30px;
+	color: #FCFCFC;
+	font-weight: 600;
 }
 
 .navbar-brand img {
-    margin-left: 20px;
-    height: auto; /* Adjust based on your logo size */
-    width: 195px;
+	margin-left: 20px;
+	height: auto;
+	width: 195px;
 }
 
+.nav-item-spacing {
+    margin-right: 15px; 
+}
+
+.nav-item-spacing:last-child {
+    margin-right: 0;
+}
 
 /*BANNER STYLES*/
-.banner-heading{
-    font-family: heavitas;
-    width: 100%
+
+.banner{
+	background-image:url(images/bg-img.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner-heading {
+	font-family: heavitas;
+	width: 100%;
 }
 /*ABOUT-US STYLES*/
-.about-us-subheading, .about-us-para{
-    color: #98A2B3;
+.about-us-subheading, .about-us-para {
+	color: #98A2B3;
 }
 
-.aboutus-btn a{
-    color: white;
-    background-color: #FE8F01;
-    box-shadow: #FE8F01 1px;
+.aboutus-btn a {
+	color: white;
+	background-color: #FE8F01;
+	box-shadow: #FE8F01 1px;
 }
 /*FEATURES STYLES*/
-.features-subheading, .features-para{
-    color: #98A2B3;
+.features-subheading, .features-para {
+	color: #98A2B3;
 }
 
-.bullet img{
-    height: 25px;
-    width: auto;
+.bullet img {
+	height: 25px;
+	width: auto;
 }
 
-.bullet p{
-    color: #98A2B3;
-}
-/*HOW-IT-WORKS-STYLES*/
-.howitworks-para p{
-    color: #FCFCFC;
+.bullet p {
+	color: #98A2B3;
 }
 
-.accordion, .accordion-body, .accordion-button{
-    border:none
+/* HOW-IT-WORKS (TAB STYLES) */
+/* custom.css */
+.custom-tabs {
+    border: 1px solid #FE8F01;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 50px;
 }
 
-.accordion-body{
-    background-color: #101010;
-    color: #FCFCFC;
+.custom-tabs .nav-link {
+    padding: 15px;
+    margin-top:5px ;
+    margin-bottom: 5px;
     border: none;
+    width: 90%; /* Remove underline from tab links */
+    border-radius: 50px; /* Make tabs pill-shaped */
+    color: #FE8F01; /* Tab text color */
 }
 
-.accordion-button{
-    background-color: #23190b;
-    color: #FCFCFC;
-    border:none;
+.custom-tabs .nav-item{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
+.custom-tabs .nav-link.active {
+    background-color: #FE8F01; /* Active tab color */
+    color: #FCFCFC; /* Active tab text color */
+}
+
+/*HOW-IT-WORKS (ACCORDION-STYLES*/
+.howitworks-para p {
+	color: #FCFCFC;
+}
+
+.accordion, .accordion-body, .accordion-button {
+	border: none;
+}
+
+.accordion-body {
+	background-color: #101010;
+	color: #FCFCFC;
+	border: none;
+}
+
+.accordion-button {
+	background-color: #23190b;
+	color: #FCFCFC;
+	border: none;
 }
 
 #accordionHowItWorks .accordion-button:not(.collapsed) {
-    background-color: #FE8F01; 
-    color: white;           
-    border: none;    
+	background-color: #FE8F01;
+	color: white;
+	border: none;
 }
 
 #accordionHowItWorks .accordion-button.collapsed {
-    background-color: #FE8F01;  
-    color: white;                    
+	background-color: #FE8F01;
+	color: white;
 }
 
 #accordionHowItWorks .accordion-button:hover {
-    background-color: #FE8F01; 
-    color: white;
+	background-color: #FE8F01;
+	color: white;
 }
 
-/* Accordion Item Border when opened */
 #accordionHowItWorks .accordion-collapse {
-    border: none  /* Custom border for the open state */
+	border: none;
 }
 
 
 /*FAQ STYLES*/
-.faq-subheading{
-    color: #FE8F01;
+.faq-subheading {
+	color: #FE8F01;
 }
 
-#accordionFAQ .accordion-button:not(.collapsed){
-    background-color: #FE8F01;  
-    color: white;
-    font-weight: 600;
-    border: none;  
+#accordionFAQ .accordion-button:not(.collapsed) {
+	background-color: #FE8F01;
+	color: white;
+	font-weight: 600;
+	border: none;
 }
 
-#accordionFAQ .accordion-button.collapsed{
-    background-color: #101010;
-    border:solid 2px #FE8F01;
+#accordionFAQ .accordion-button.collapsed {
+	background-color: #101010;
+	border: solid 2px #FE8F01;
 }
-/* Apply styles only to the FAQ accordion */
+
 .faq-accordion .accordion-item .accordion-button {
-    border-radius: 0.5rem; /* Adjust for the round effect */
+	border-radius: 0.5rem;
 }
 
 .faq-accordion .accordion-item {
-    border-radius: 0.5rem; /* Consistent rounded corners for the accordion item */
+	border-radius: 0.5rem;
 }
 
-/* Custom width for FAQ accordion items */
 .faq-accordion .accordion-item {
-    margin: 0 auto;
-    width: 50%; /* Override any custom width for FAQ accordion */
+	margin: 0 auto;
+	width: 50%;
 }
 
 /*DOWNLOAD-APP STYLES*/
-.dop-para{
-    color: #98A2B3;
+.dop-para {
+	color: #98A2B3;
 }
 /*FOOTER STYLES*/
-.footer-links{
-    border-top: 2px solid #323232;
-    border-bottom: 2px solid #323232;
-    height: auto;
+.footer-links {
+	border-top: 2px solid #323232;
+	border-bottom: 2px solid #323232;
+	height: auto;
 }
 
-
-
-@media (min-width: 576px) { /* Small devices (sm) and above */
-    .faq-accordion .accordion-item {
-        width: 100%;
-    }
+.footer-links a {
+	color: #FCFCFC;
+	text-decoration: none;
 }
 
-@media (min-width: 768px) { /* Medium devices (md) and above */
-    .faq-accordion .accordion-item {
-        width: 50%;
-    }
+footer p {
+	color: #98A2B3;
 }
 
-@media (min-width: 992px) { /* Large devices (lg) and above */
-    .faq-accordion .accordion-item {
-        width: 50%;
-    }
+.TAC a {
+	color: #98A2B3;
+}
+
+@media (min-width: 576px) {
+	.faq-accordion .accordion-item {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.faq-accordion .accordion-item {
+		width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.faq-accordion .accordion-item {
+		width: 50%;
+	}
 }
