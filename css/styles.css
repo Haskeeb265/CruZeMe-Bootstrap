@@ -11,7 +11,7 @@ body {
 
 @font-face {
 	font-family: gilroy;
-    src: url(fonts/Gilroy-Regular.ttf);
+	src: url(fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
@@ -21,6 +21,18 @@ body {
 
 span {
 	color: #FE8F01;
+}
+
+.aboutus, .features, .howitworks, .downloadourapp, .faq{
+	padding-top: 158px;
+}
+
+footer{
+	background-image: url(assets/images/footer-bg.png);
+	background-position: center top;
+	background-repeat:round;
+	background-size: cover;
+	padding-bottom: 30px;
 }
 
 
@@ -35,11 +47,20 @@ span {
 }
 
 #contact-btn button {
+	margin-right: 20px;
+	padding: 11px 25px;
 	background-color: #FE8F01;
-	border: none;
-	border-radius: 30px;
 	color: #FCFCFC;
-	font-weight: 600;
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px 0px #FE8F01;
+	font-weight: 700;
+	transition: 0.3s;
+	border: none;
+}
+
+#contact-btn button:hover {
+	color: #FCFCFC;
+	box-shadow: 0px 0px 10px 0px #FE8F01;
 }
 
 .navbar-brand img {
@@ -59,7 +80,7 @@ span {
 /*BANNER STYLES*/
 
 .banner{
-	background-image:url(images/bg-img.png);
+	background-image:url(assets/images/bg-img2.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -75,11 +96,19 @@ span {
 }
 
 .aboutus-btn a {
+	font-family: Gilroy;
+	font-size: 14px;
+	font-weight: 800;
+	text-decoration: none;
 	color: white;
+	cursor: pointer;
 	background-color: #FE8F01;
-	box-shadow: #FE8F01 1px;
+	padding: 17px 40px;
+	border-radius: 50px;
+	box-shadow: 0px 0px 15px 0px #FE8F01;
 }
 /*FEATURES STYLES*/
+
 .features-subheading, .features-para {
 	color: #98A2B3;
 }
@@ -146,9 +175,9 @@ span {
 }
 
 #accordionHowItWorks .accordion-button:not(.collapsed) {
-	background-color: #FE8F01;
-	color: white;
-	border: none;
+		background-color: #FE8F01;
+		color: white;
+		border: none;
 }
 
 #accordionHowItWorks .accordion-button.collapsed {
@@ -181,6 +210,7 @@ span {
 #accordionFAQ .accordion-button.collapsed {
 	background-color: #101010;
 	border: solid 2px #FE8F01;
+	border-radius: 10px;
 }
 
 .faq-accordion .accordion-item .accordion-button {
@@ -223,6 +253,7 @@ footer p {
 @media (min-width: 576px) {
 	.faq-accordion .accordion-item {
 		width: 100%;
+		background-color: transparent;
 	}
 }
 
